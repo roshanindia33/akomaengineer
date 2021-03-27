@@ -1,0 +1,589 @@
+
+{% extends 'base.html' %}
+<!-- for title -->
+{% block title %}
+    Akoma
+{% endblock title %}
+<!-- for title -->
+{% block style %}
+    
+<style>
+    .btn-akoma-blog{
+        position: relative;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1d2434;
+    border: 2px solid #1d2434;
+    border-radius: 0;
+    background: none;
+    transition: .3s;
+    }
+    .btn-akoma-blog:hover{
+        background: #1d2434;
+    }
+</style>
+
+{% endblock style %}
+
+
+{% block body %}
+
+    <!-- Hero Start -->
+    <div class="hero">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="hero-text">
+                        <!-- <h1>HTML5 Template for Salon Website</h1> -->
+                        <h1>Get Our Best Portfolio On Akoma</h1>
+                        <p>
+                            Complete Tasks on Datasets , Join The Next competition , Add New Notebook And Get Free
+                            Courses
+                            With Experts . <br>
+                            Use As A Devloper..
+                        </p>
+                        <a class="btn" href="/about-akoma">About Akoma</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 d-none d-md-block">
+                    <div class="hero-image">
+                        <img src="static/img2/rto3.png" alt="Hero Image">
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn-play" data-toggle="modal"
+                data-src="https://www.youtube.com/watch?v=bb4z5OuWieY" data-target="#videoModal">
+                <span></span>
+            </button>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Video Modal Start-->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="......" id="video" allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- About Start -->
+    <div class="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-6">
+                    <div class="about-img">
+                        <img src="static/img2/ia.jpg" alt="Image">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6">
+                    <div class="section-header text-left">
+                        <p>Learn About To AI</p>
+                        <h2>Artificial Intelligence (AI)</h2>
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            Artificial intelligence enables computers and machines to mimic the perception, learning,
+                            problem-solving, and decision-making capabilities of the human mind.
+                        </p>
+                        <p>
+                            In computer science, the term artificial intelligence (AI) refers to any human-like
+                            intelligence exhibited by a computer, robot, or other machine. In popular usage, artificial
+                            intelligence refers to the ability of a computer or machine to mimic the capabilities of the
+                            human mind—learning from examples and experience, recognizing objects, understanding and
+                            responding to language, making decisions, solving problems—and combining these and other
+                            capabilities to perform functions a human might perform, such as greeting a hotel guest or
+                            driving a car. <br><br>
+
+                            After decades of being relegated to science fiction, today, AI is part of our everyday
+                            lives. The surge in AI development is made possible by the sudden availability of large
+                            amounts of data and the corresponding development and wide availability of computer systems
+                            that can process all that data faster and more accurately than humans can. AI is completing
+                            our words as we type them, providing driving directions when we ask, vacuuming our floors,
+                            and recommending what we should buy or binge-watch next. And it’s driving applications—such
+                            as medical image analysis—that help skilled professionals do important work faster and with
+                            greater success.
+                        </p>
+                        <a class="btn" href="/caitalog">Get Courses</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="service">
+        <div class="container">
+            <div class="section-header text-center">
+                <p>Akoma Provide Best Videos</p>
+                <p>Of Courses</p>
+                <h2>Services Of Akoma</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="static/img2/g.gif" alt="Image">
+                        </div>
+                        <h3>Artificial Intelligence</h3>
+                        <p>
+                            Artificial Intelligence course is the most popular course of Akoma and Akoma provide you
+                            best learning.
+                        </p>
+                        <a class="btn" href="/caitalog">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="static/img2/g1.gif" alt="Image">
+                        </div>
+                        <h3>Deep Learning</h3>
+                        <p>
+                            Deep Learning is a subset of Machine Learning. Understanding of Deep Learning
+                            and practical with Akoma.
+                        </p>
+                        <a class="btn" href="/caitalog">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="static/img2/g2.gif" alt="Image">
+                        </div>
+                        <h3>Machine Learning</h3>
+                        <p>
+                            Machine learning is a subset of AI.Get code of examples and work with projects
+                            on Akoma.
+                        </p>
+                        <a class="btn" href="/caitalog">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Pricing Start -->
+    <div class="price">
+        <div class="container">
+            <div class="section-header text-center">
+                <p>Akoma Submission</p>
+                <h2>Akoma Advanced Techniques Or PortFolio</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="price-item">
+                        <div class="price-img">
+                            <img src="static/img2/nlp.jpg" alt="Image">
+                        </div>
+                        <div class="price-text">
+                            <h2><a href="/" class="proj">NLP</a></h2>
+                            <h3><a href="/" class="proj">Natural Language Processing</a> </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="price-item">
+                        <div class="price-img">
+                            <img src="static/img2/cv.jpg" alt="Image">
+                        </div>
+                        <div class="price-text">
+                            <h2><a href="/" class="proj">Open CV</a></h2>
+                            <h3><a href="/" class="proj">Computer Vision Problem Detection</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="price-item">
+                        <div class="price-img">
+                            <img src="static/img2/rl.jpg" alt="Image">
+                        </div>
+                        <div class="price-text">
+                            <h2><a href="/" class="proj">RL</a></h2>
+                            <h3><a href="/" class="proj">Reinforcement Learning Technique</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="price-item">
+                        <div class="price-img">
+                            <img src="static/img2/deep.png" alt="Image">
+                        </div>
+                        <div class="price-text">
+                            <h2><a href="/" class="proj">DL</a></h2>
+                            <h3><a href="/" class="proj">Deep Learning Course With Projects</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="price-item">
+                        <div class="price-img">
+                            <img src="static/img2/mnistdata.png" alt="Image">
+                        </div>
+                        <div class="price-text">
+                            <h2><a href="/" class="proj">Img Segmetation</a></h2>
+                            <h3><a href="/" class="proj">Complete Notebook, and Dataset of Mnist</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="price-item">
+                        <div class="price-img">
+                            <img src="static/img2/pl.png" alt="Image">
+                        </div>
+                        <div class="price-text">
+                            <h2><a href="/" class="proj">Advance Libraries</a></h2>
+                            <h3><a href="/" class="proj">Python Libraries with Examples Akoma</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="price-item">
+                        <div class="price-img">
+                            <img src="static/img2/Kaggle.jpg" alt="Image">
+                        </div>
+                        <div class="price-text">
+                            <h2><a href="/" class="proj">Kaggle</a></h2>
+                            <h3><a href="/" class="proj">Kaggle Dataset Store And Practicals</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="price-item">
+                        <div class="price-img">
+                            <img src="static/img2/ai2.png" alt="Image">
+                        </div>
+                        <div class="price-text">
+                            <h2><a href="/" class="proj">AI Techniques</a></h2>
+                            <h3><a href="/" class="proj">Get Advance AI Based Techniques</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="price-item">
+                        <div class="price-img">
+                            <img src="static/img2/com.jpg" alt="Image">
+                        </div>
+                        <div class="price-text">
+                            <h2><a href="/" class="proj">Competitions</a></h2>
+                            <h3><a href="/" class="proj">Join Contest Get Stars Grow Your Level</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="price-item">
+                        <div class="price-img">
+                            <img src="static/img2/diploy.png" alt="Image">
+                        </div>
+                        <div class="price-text">
+                            <h2><a href="/" class="proj">Diployment</a></h2>
+                            <h3><a href="/" class="proj">Google Cloud, aws, Heroku, Flask, Azure</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="price-item">
+                        <div class="price-img">
+                            <img src="static/img2/pro.png" alt="Image">
+                        </div>
+                        <div class="price-text">
+                            <h2><a href="/" class="proj">Projecs</a></h2>
+                            <h3><a href="/" class="proj">Project Ideas And Diployment with Akoma</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="price-item">
+                        <div class="price-img">
+                            <img src="static/img2/blog.jpg" alt="Image">
+                        </div>
+                        <div class="price-text">
+                            <h2><a href="/" class="proj">Blog...</a></h2>
+                            <h3><a href="/" class="proj">Akoma Blog (Read Details of Akoma Blog)</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pricing End -->
+
+    <!-- Testimonial Start -->
+    <div class="testimonial">
+        <div class="container">
+            <h2 style="margin: auto; width: fit-content; font-weight: bolder; font-family: Bell MT; color: wheat;">Top
+                Ranking Updated Levels</h2>
+            <div class="owl-carousel testimonials-carousel">
+                <div class="testimonial-item">
+                    <img src="static/logo/akoma.png" alt="Image">
+                    <p>
+                        Level - 18,
+                        Score - 0.5,
+                        Rank - Gold <br>
+                        Join The Competitions And Grow Your Skills. <br>
+                        Akoma Competitions Completed 23 And Joined The Next Session...
+                    </p>
+                    <h2>Roshan Kumar</h2>
+                    <h3>Competition</h3>
+                </div>
+                <div class="testimonial-item">
+                    <img src="static/img2/alice.jpg" alt="Image">
+                    <p>
+                        Solved Problems - 30, Score - 0.3, Rank - Platinum <br>
+                        Solve The Next Problem And Grow Your Abilities Of Problem Detecting. <br>
+                        Akoma Notebook Completed 19 And Join The Next Session...
+                    </p>
+                    <h2>Alice202</h2>
+                    <h3>Notebook</h3>
+                </div>
+                <div class="testimonial-item">
+                    <img src="static/logo/akoma.png" alt="Image">
+                    <p>
+                        Dataset Cont. - 36, Score - 0.7, Rank - Gold <br>
+                        A New Dataset Has Been Connected. Resolve Issue>> <br>
+                        Akoma Dataset Connection Creation And Join The Next Session...
+                    </p>
+                    <h2>Alora444</h2>
+                    <h3>Dataset</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Team Start -->
+    <div class="team">
+        <div class="container">
+            <div class="section-header text-center">
+                <p>Model Diploy on Multiple Platfoms</p>
+                <h2>App Diployment On Akoma</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="static/img2/cloud.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-text">
+                            <h2>Cloud Service</h2>
+                            <p>Diploy Your App On Google Cloud</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="static/img2/aws.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-text">
+                            <h2>AWS</h2>
+                            <p>Amazon Web Service For Diployment Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="static/img2/heroku.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-text">
+                            <h2>Heroku</h2>
+                            <p>App Diploy On Heroku Platform Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="static/img2/azure.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-text">
+                            <h2>Azure</h2>
+                            <p>Microsoft Web Diployment On Payable</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+
+
+
+    <!-- Blog Start -->
+    <div class="blog">
+        <div class="container">
+            <div class="section-header text-center">
+                <p>Latest From Blog</p>
+                <h2>Learn More from Latest Akoma Blog</h2>
+            </div>
+            <div class="owl-carousel blog-carousel">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="static/img2/blog_coming.png" alt="Blog">
+                    </div>
+                    <div class="blog-meta">
+                        <i class="fa fa-list-alt"></i>
+                        <a href="">Properties</a>
+                        <i class="fa fa-calendar-alt"></i>
+                        <p>Upload Date</p>
+                    </div>
+                    <div class="blog-text">
+                        <h2>Akoma Blog</h2>
+                        <p>
+                            Akoma Blog Discription Show Here. Read Letest Blog Here New Submission, App ,Related To Course And Much More.
+                             Well Blog Is Coming..
+                        </p>
+                        <a class="btn-akoma-blog" href="/blog">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="static/img2/blog_coming.png" alt="Blog">
+                    </div>
+                    <div class="blog-meta">
+                        <i class="fa fa-list-alt"></i>
+                        <a href="">Properties</a>
+                        <i class="fa fa-calendar-alt"></i>
+                        <p>Upload Date</p>
+                    </div>
+                    <div class="blog-text">
+                        <h2>Akoma Blog</h2>
+                        <p>
+                            Akoma Blog Discription Show Here. Read Letest Blog Here New Submission, App ,Related To Course And Much More.
+                             Well Blog Is Coming..
+                        </p>
+                        <a class="btn-akoma-blog" href="/blog">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="static/img2/blog_coming.png" alt="Blog">
+                    </div>
+                    <div class="blog-meta">
+                        <i class="fa fa-list-alt"></i>
+                        <a href="">Properties</a>
+                        <i class="fa fa-calendar-alt"></i>
+                        <p>Upload Date</p>
+                    </div>
+                    <div class="blog-text">
+                        <h2>Akoma Blog</h2>
+                        <p>
+                            Akoma Blog Discription Show Here. Read Letest Blog Here New Submission, App ,Related To Course And Much More.
+                             Well Blog Is Coming..
+                        </p>
+                        <a class="btn-akoma-blog" href="/blog">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="static/img2/blog_coming.png" alt="Blog">
+                    </div>
+                    <div class="blog-meta">
+                        <i class="fa fa-list-alt"></i>
+                        <a href="">Properties</a>
+                        <i class="fa fa-calendar-alt"></i>
+                        <p>Upload Date</p>
+                    </div>
+                    <div class="blog-text">
+                        <h2>Akoma Blog</h2>
+                        <p>
+                            Akoma Blog Discription Show Here. Read Letest Blog Here New Submission, App ,Related To Course And Much More.
+                             Well Blog Is Coming..
+                        </p>
+                        <a class="btn-akoma-blog" href="/blog">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="static/img2/blog_coming.png" alt="Blog">
+                    </div>
+                    <div class="blog-meta">
+                        <i class="fa fa-list-alt"></i>
+                        <a href="">Properties</a>
+                        <i class="fa fa-calendar-alt"></i>
+                        <p>Upload Date</p>
+                    </div>
+                    <div class="blog-text">
+                        <h2>Akoma Blog</h2>
+                        <p>
+                            Akoma Blog Discription Show Here. Read Letest Blog Here New Submission, App ,Related To Course And Much More.
+                             Well Blog Is Coming..
+                        </p>
+                        <a class="btn-akoma-blog" href="/blog">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="static/img2/blog_coming.png" alt="Blog">
+                    </div>
+                    <div class="blog-meta">
+                        <i class="fa fa-list-alt"></i>
+                        <a href="">Properties</a>
+                        <i class="fa fa-calendar-alt"></i>
+                        <p>Upload Date</p>
+                    </div>
+                    <div class="blog-text">
+                        <h2>Akoma Blog</h2>
+                        <p>
+                            Akoma Blog Discription Show Here. Read Letest Blog Here New Submission, App ,Related To Course And Much More.
+                             Well Blog Is Coming..
+                        </p>
+                        <a class="btn-akoma-blog" href="/blog">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+    <!-- ***********************************************************************************************************************************************************************
+    ******************************************************************************************************************************************************************************************* -->
+    <!-- Contact Start -->
+    <div id="contact-main">
+        <div class="contact-main-box" id="contact-box1">
+            <img src="static/img2/contact.webp" alt="Akoma">
+        </div>
+        <div class="contact-main-box" id="contact-box2">
+            <h1 id="query-akoma">Submit Query on Akoma</h1>
+            <form id="form-query-akoma" action="/" method="post">
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="name" name="name" required="required" placeholder="Your Name" data-validation-required-message="Please enter your name">
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control" id="email" name="email" required="required" placeholder="Your Email">
+                </div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="subject" name="subject" required="required" placeholder="Subject">
+                </div>
+                <div class="mb-3">
+                  <textarea type="text" class="form-control" id="message" name="message" required="required" placeholder="Messsage" rows="3" ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+    {% endblock body %}

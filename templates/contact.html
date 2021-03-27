@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+<!-- title -->
+{% block title %}
+    Akoma-Contact for any query
+{% endblock title %}
+<!-- title -->Akoma-Contact for any query
+{% block body %}
+
+<title>Contact</title>
+<!-- Page Header Start -->
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Contact</h2>
+            </div>
+            <div class="col-12">
+                <a href="/">Home</a>
+                <a href="/contact">Contact</a>
+            </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+
+        <!-- Contact Start -->
+        <div id="contact-main">
+            <div class="contact-main-box" id="contact-box1">
+                <img src="static/img2/contact.webp" alt="d">
+            </div>
+            <div class="contact-main-box" id="contact-box2">
+                <h1 id="query-akoma">Submit Query on Akoma</h1>
+                <form id="form-query-akoma" action="/" method="post">
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="name" name="name" required="required" placeholder="Your Name" data-validation-required-message="Please enter your name">
+                    </div>
+                    <div class="mb-3">
+                      <input type="email" class="form-control" id="email" name="email" required="required" placeholder="Your Email">
+                    </div>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="subject" name="subject" required="required" placeholder="Subject">
+                    </div>
+                    <div class="mb-3">
+                      <textarea type="text" class="form-control" id="message" name="message" required="required" placeholder="Messsage" rows="4" ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                  </form>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+        {% endblock body %}

@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+{% block title %}
+Akoma-About to
+{% endblock title %}
+
+
+{% block style %}
+<style>
+    /* about page */
+    #about-akoma-main {
+        width: 100%;
+        height: fit-content;
+        font-weight: bolder;
+    }
+
+    #about-akoma-box {
+        max-width: 90%;
+        margin: auto;
+        height: fit-content;
+        box-shadow:2px 7px 10px 1px grey;
+        padding: 5px 30px;
+        margin-top: 50px;
+    }
+    @media screen and (max-width:936px) {
+       #about-akoma-box {
+           max-width: 100%;
+           margin: auto;
+           height: fit-content;
+           box-shadow:2px 7px 10px 1px grey;
+           padding: 5px 10px;
+       }
+       
+   }
+
+
+    #about-akoma-box>p, #about-akoma-box>a{
+        font-size: 1rem;
+        margin: 20px 20px;
+        text-align: justify;
+    }
+    #about-akoma-box>h2{
+        font-size: 1.5rem;
+        margin: 20px 1px;
+        text-align: justify;
+        font-weight: bold;
+        width: 99%;
+    }
+    #about-akoma-box>h1{
+        font-weight: bolder;
+        font-size: 40px;
+        margin-bottom: 25px;
+    }
+    #about-akoma-box>h3{
+        font-weight: bold;
+        font-size: 25px;
+        margin: 30px 5px;
+    }
+    #about-akoma-box>a ,#btn-yoy>a{
+            padding: 15px 30px;
+  font-size: 14.4px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #d5b981;
+  background: none;
+  border: 2px solid #d5b981;
+  transition: 0.3s;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  transition: 0.5s;
+    }
+#btn-yoy{
+    display: flex;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+#btn-yoy>a:hover,#about-akoma-box>a:hover{
+    background: rgb(29, 36, 52);
+            color: rgb(216, 192, 148);
+}
+ 
+
+    .coming-soon-akoma{
+        width: 99.5%;
+        margin: 60px auto;
+        font-family: monospace;
+        font-size: 25px;
+        color: wheat;
+        background: rgb(29, 36, 52) ;
+        padding: 40px 10px;
+        box-shadow: 30px 9px 10px 0px grey;
+    }
+</style>
+{% endblock style %}
+
+{% block body %}
+<!-- Page Header Start -->
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Akoma Questions</h2>
+            </div>
+            <div class="col-12">
+                <a href="">Home</a>
+                <a href="">About To Akoma</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+<!-- about page -->
+<div id="about-akoma-main">
+    <div id="about-akoma-box">
+
+        <h1>What is Akoma ?</h1>
+
+        <h2>Akoma is the largest data science, machine learning community with powerful tools and resources to help you
+            achieve your data science, or machine learning goals and offers free aritificial intelligence ,maching
+            learning ,data science courses.</h2>
+
+        <p id="matter">
+            Akoma provide online training in disciplines such as Artificial Intelligence, Machine Learning, Deep
+            Learning, and Data Science,Reinforcement Learning, Open CV , Data Visualization , among others, where
+            technologies and best practices are changing rapidly.
+        </p>
+        <p>
+            Work With Akoma.Join The Session And Grow Your Abilities, Improove Your Skill ,
+            Join Competitions on Akoma And Cullect Ranking.
+        </p>
+        <h3>Akoma Vision:</h3>
+        <p>To provide Free Online Training in the field of Artificial Intelligence for all.</p>
+
+        <h3>Akoma mission:</h3>
+        <p>To Become a World largest “Akoma Artificial Intelligence (AI) ” based company.</p>
+        <p>
+            Akoma also provide video lectures on youtube...
+            In disciplines of Artificial Intelligence, Machine Learning, Deep Learning, Python and R programming
+            language, etc.
+            Akoma also provide real-time projects in the field of AI and Data
+            Science</p>
+        <h3>How To Use Akoma ?</h3>
+            <a href="https://www.youtube.com/watch?v=bb4z5OuWieY">Watch Now</a>
+        <h3>You Tube</h3>
+        <div id="btn-yoy"> <a href="https://www.youtube.com/channel/UCTrE7W2WiNL4OdWyYSoY05Q">youtube/Akoma</a> 
+            <a href="">Subscribe Now</a></div>
+         
+    </div>
+</div>
+<div class="coming-soon-akoma">New Documentation Will Coming Soon.......</div>
+<!-- about page -->
+
+
+{% endblock body %}

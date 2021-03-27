@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .login-akoma-main{
+            border: 1px solid white;
+            width: 100%;
+            height: 100vh;
+            backdrop-filter: blur(8px);
+            
+        }
+        .login-akoma-box{
+            
+            width:430px;
+            height: 450px;
+            margin: auto;
+            margin-top: 50px;
+            background: rgb(29, 36, 52);
+            box-shadow: 15px 15px 46px 3px grey;
+        }
+        #login-akoma-form{
+            width: 80%;
+            margin: auto;
+            margin-top: 60px;
+            /* display: flex;
+            flex-direction: column; */
+
+        }
+        #login-akoma-form>div{
+            margin-top: 50px;
+        }
+        .login-form-inp{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 24px;
+            padding: 10px;
+            background: rgb(29, 36, 52);
+            border: none;
+            border-bottom: 1px solid wheat;
+            outline: none;
+            color: grey;
+            font-size: large;
+        }
+        .login-form-inp:hover{
+
+        }
+        .login-form-btn{
+            padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #d5b981;
+  background: none;
+  border: 2px solid #d5b981;
+  border-radius: 0;
+  float: left;
+  margin-left: 0px;
+  transition: 0.3s;
+
+        }
+        .login-form-btn:hover{
+            background: white;
+            color: rgb(70, 64, 64);
+            outline: none;
+        }
+        .signup-btn{
+            padding: 15px 30px;
+  font-size: 14.4px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #d5b981;
+  background: none;
+  border: 2px solid #d5b981;
+  border-radius: 0;
+  float: right;
+  margin-right: 0px;
+  transition: 0.3s;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .signup-btn:hover{
+            background: white;
+            color: rgb(70, 64, 64);
+        }
+
+        /* h1 */
+        #akoma-login-h1{
+            width: fit-content;
+            margin: auto;
+            margin-top: 44px;
+            padding: 19px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: wheat;
+            border: none;
+        }
+        @media screen and (max-width:442px){
+            .login-akoma-box{
+                width: 98%;
+            }
+        }
+        .forget_pass{
+            color: wheat;
+            width:fit-content;
+            text-decoration: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            float: right;
+            right: 0px;
+        }
+        .forget_pass:hover{
+            color: blue;
+            color: white;
+        }
+        body{
+            background: wheat;
+        }
+
+    </style>
+</head>
+<body>
+
+    
+    <div class="login-akoma-main">
+        <div class="login-akoma-box">
+            <h1 id="akoma-login-h1">Akoma Log In</h1>
+            <form id="login-akoma-form" action="/login.html">
+            <input class="login-form-inp" type="email" name="email" id="email" required placeholder="Your Email">
+            <input class="login-form-inp" type="password" name="password" id="password" required placeholder="Your Password">
+            <a href="/forget" class="forget_pass">Forget Password</a>
+            <div>
+            <button class="login-form-btn" type="submit">Log In</button>
+            <a href="/signup" type="button" target="_blank" class="signup-btn">Sign Up</a>
+            </div>
+ 
+</body>
+
+</html>

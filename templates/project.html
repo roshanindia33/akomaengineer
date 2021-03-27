@@ -1,0 +1,192 @@
+{% extends 'base.html' %}
+{% block title %}
+Akoma Projects
+{% endblock title %}
+<!-- for styling -->
+{% block style %}
+<style>
+    /* imports */
+    #akoma-pro-box {
+        width: 99%;
+        height: 30%;
+        overflow: hidden;
+        margin: auto;
+        background: rgb(221, 196, 150);
+    }
+    .header-ml,h1{
+        width: fit-content;
+        font-size: 1.5rem;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin: auto;
+        color: rgb(29, 36, 52);
+        font-weight: bolder;
+        font-size: 38px;
+        text-align: center;
+        margin-bottom: 10px;
+
+
+    }
+    .akoma-project-box{
+        width: 99%;
+        margin: auto;
+        height: 400px;
+        box-shadow: 5px 5px 26px 1px grey;
+    }
+    .akoma-project-box>h1 ,.akoma-project-frame>h1{
+        font-size: 1.7rem;
+    }
+
+    .akoma-project-frame{
+        width: 100%;
+        text-align: center;
+}
+        
+    }
+    .file-box{
+        display: flex;
+        flex-wrap: nowrap;
+        width: fit-content;
+        margin: auto;
+    }
+    .file-pro-akoma{
+        border: 1px solid grey;
+    margin: 5px;
+    padding: 15px 25px;
+    transition: 0.3;
+
+}
+
+.file-pro-akoma:hover{
+    background: rgb(29, 36, 52);
+    color: wheat;
+}
+.diploy-file1-ml{
+    margin-bottom: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    cursor: cell;
+}
+/* project description */
+.project-desc-akoma{
+    width: 95%;
+    margin: auto;
+    text-align: justify;
+}
+.project-desc-akoma>h5{
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+@media screen and (max-width:443px){
+    .akoma-project-box{
+        height: 440px;
+    }
+
+}
+@media screen and (min-width:1001px) {
+    #akoma-pro-box {
+        width: 97%;
+    }
+}
+
+</style>
+{% endblock style %}
+{% block body %}
+<!-- Page Header Start -->
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Akoma Projects (Akomalite)</h2>
+                <p>Akoma Projects version: 1.0.0</p>
+            </div>
+            <div class="col-12">
+                <a href="">Home</a>
+                <a href="">Projects</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+
+
+<!-- Single Page Start -->
+<!-- form -->
+
+
+<div id="akoma-pro-box">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="static/img2/bot9.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Access My All Projects</h5>
+                    <p>Watch Full Project Videos And Leave The Message.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="static/img2/bot1.gif" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Get Code And Submissions</h5>
+                    <p>Live Project Session Watch Now On Hindi Language.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="static/img2/dd.gif" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Join Now On Akoma Courses Session</h5>
+                    <p>Get Free All Courses On Akoma And Subscribe Akoma.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+
+<!-- Single Page End -->
+
+<!-- <form action=""></form> -->
+<header class="header-ml">Machine Learnig Project with Videos</header>
+
+
+<!-- projects session -->
+<div class="akoma-project-box">
+    <h1>Project Type</h1>
+    <hr>
+    <div class="akoma-project-frame">
+    <h1>Project Name</h1>
+    <div class="project-desc-akoma">
+        <h5>Project Description </h5>
+    <p><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis similique maxime dolor assumenda rerum, quos expedita recusandae maiores laboriosam at quia officiis magni amet eveniet velit, temporibus sunt aut earum?</p></div>
+    <div class="diploy-file1-ml">Diployed on Platform</div>
+
+    <div class="file-box">
+        <a class="file-pro-akoma" href="#"> Project Files </a>
+        <a class="file-pro-akoma" href="/">Watch Project</a>
+
+    </div>
+
+</div>
+</div>
+
+
+{% endblock body %}

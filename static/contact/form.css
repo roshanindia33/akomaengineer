@@ -1,0 +1,68 @@
+#contact-main {
+  display: flex;
+  width: 100%;
+  background: rgb(29, 36, 52);
+}
+#contact-box1 > img {
+  width: 35vw;
+  height: 505px;
+}
+#contact-box2 {
+  margin-top: 10px;
+  width: 100%;
+}
+/* form */
+#form-query-akoma {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  margin-top: 40px;
+}
+.form-control {
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid wheat;
+  margin-top: 25px;
+  padding-bottom: 9px;
+  padding-top: 9px;
+  color: rgb(70, 64, 64);
+  background: #1d2434;
+  outline: none;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* submit button */
+.btn {
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #d5b981;
+  background: none;
+  border: 2px solid #d5b981;
+  border-radius: 0;
+  transition: 0.3s;
+  margin-top: 13px;
+  float: left;
+  margin-left: 0px;
+}
+.btn:hover {
+  background: rgb(230, 200, 146);
+  color: #1d2434;
+  cursor: pointer;
+}
+#query-akoma {
+  text-align: center;
+  color: wheat;
+  cursor: pointer;
+}
+@media screen and (max-width: 744px) {
+  #contact-box1 {
+    display: none;
+  }
+  #contact-main {
+    height: 530px;
+  }
+}
+
+/* News feed */

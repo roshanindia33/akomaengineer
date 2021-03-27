@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .login-akoma-main{
+            border: 1px solid white;
+            width: 100%;
+            height: 100vh;
+            backdrop-filter: blur(8px);
+            background: wheat;
+            
+        }
+        .login-akoma-box{
+            
+            width:430px;
+            height: fit-content;
+            margin: auto;
+            margin-top: 0px;
+            background: rgb(29, 36, 52);
+            box-shadow: 15px 15px 46px 3px grey;
+        }
+        #login-akoma-form{
+            width: 80%;
+            margin: auto;
+            margin-top: 0px;
+
+        }
+        #login-akoma-form>div{
+            margin-top: 50px;
+        }
+        .login-form-inp{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 24px;
+            padding: 10px;
+            background: rgb(29, 36, 52);
+            border: none;
+            border-bottom: 1px solid wheat;
+            outline: none;
+            color: grey;
+            font-size: large;
+        }
+        .login-form-btn{
+            padding: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #d5b981;
+  background: none;
+  border: 2px solid #d5b981;
+  border-radius: 0;
+  margin-top: 25px;
+  margin-left: 0px;
+  transition: 0.3s;
+  width: 100%;
+  margin-bottom: 25px;
+
+        }
+        .login-form-btn:hover{
+            background: white;
+            color: rgb(70, 64, 64);
+            outline: none;
+        }
+
+        /* h1 */
+        #akoma-login-h1{
+            width: fit-content;
+            margin: auto;
+            margin-top: 44px;
+            padding: 19px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: wheat;
+            border: none;
+        }
+        @media screen and (max-width:442px){
+            .login-akoma-box{
+                width: 98%;
+            }
+        }
+        .forget_pass{
+            color: wheat;
+            width:fit-content;
+            text-decoration: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            float: right;
+            right: 0px;
+        }
+        .forget_pass:hover{
+            color: blue;
+            color: white;
+        }
+        #akoma-login-h2{
+            font-size: large;
+            width: fit-content;
+            margin: auto;
+            color: red;
+            /* display: none; */
+        }
+
+        /* for input right arrow */
+        /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+body{
+    background: wheat;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="login-akoma-main">
+        <div class="login-akoma-box">
+            <h1 id="akoma-login-h1">Akoma Sign Up</h1>
+            <h2 id="akoma-login-h2">Fill The All Section Currectly...</h2>
+
+            <form id="login-akoma-form" action="/login.html">
+            <input class="login-form-inp" type="text" name="name" id="name" required placeholder="Your Name">
+            <input class="login-form-inp" type="email" name="email" id="email" required placeholder="Your Email">
+            <input class="login-form-inp" type="number" name="mobile" id="mobile" required placeholder="Your Mobile No.">
+            <input class="login-form-inp" type="password" name="password" id="password" required placeholder="Your Password">
+            <input class="login-form-inp" type="password" name="password" id="password" required placeholder="Confurm Password">
+            <a href="/login" class="forget_pass">Already Registered</a>
+
+            <button class="login-form-btn" type="submit">Register On Akoma</button>
+
+            
+            
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

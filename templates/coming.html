@@ -1,0 +1,144 @@
+{% extends 'base.html' %}
+{% block title %}
+Coming Soon......
+{% endblock title %}
+
+
+{% block style %}
+<style>
+    /* about page */
+    #about-akoma-main {
+        width: 100%;
+        height: fit-content;
+        font-weight: bolder;
+    }
+
+    #about-akoma-box {
+        max-width: 90%;
+        margin: auto;
+        height: fit-content;
+        box-shadow:2px 7px 10px 1px grey;
+        padding: 5px 30px;
+        margin-top: 50px;
+    }
+    #about-akoma-box>p, #about-akoma-box>a{
+        font-size: 1rem;
+        margin: 20px 20px;
+        text-align: justify;
+    }
+    #about-akoma-box>h2{
+        font-size: 1.5rem;
+        margin: 20px 1px;
+        text-align: justify;
+        font-weight: bold;
+        width: 99%;
+    }
+    #about-akoma-box>h1{
+        font-weight: bolder;
+        font-size: 40px;
+        margin-bottom: 25px;
+    }
+    #about-akoma-box>a ,#btn-yoy>a{
+            padding: 15px 30px;
+  font-size: 14.4px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #d5b981;
+  background: none;
+  border: 2px solid #d5b981;
+  transition: 0.3s;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  transition: 0.5s;
+  margin-top: 20px;
+    }
+#btn-yoy{
+    display: flex;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+#btn-yoy>a{
+    padding: 15px 63px;
+}
+#btn-yoy>a:hover,#about-akoma-box>a:hover{
+    background: rgb(29, 36, 52);
+            color: rgb(216, 192, 148);
+}
+ 
+
+    .coming-soon-akoma{
+        width: 99.5%;
+        margin: 60px auto;
+        font-family: monospace;
+        font-size: 25px;
+        color: wheat;
+        background: rgb(29, 36, 52) ;
+        padding: 40px 10px;
+        box-shadow: 30px 9px 10px 0px grey;
+    }
+    /* social media links */
+    .footer-social-ak{
+        width: fit-content;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .footer-social-ak>a{
+        border: 1px solid rgb(214, 191, 149);
+        padding: 10px 30px;
+    }
+    .footer-social-ak>a:hover{
+        background: rgb(29, 36, 52);
+    }
+    @media screen and (max-width:513px) {
+        .footer-social-ak>a{
+        border: 1px solid rgb(214, 191, 149);
+        padding: 8px 20px;
+    }
+    }
+    @media screen and (max-width:410px) {
+        .footer-social-ak>a{
+        border: 1px solid rgb(214, 191, 149);
+        padding: 6px 15px;
+    }
+    }
+</style>
+{% endblock style %}
+
+{% block body %}
+<!-- about page -->
+<div id="about-akoma-main">
+    <div id="about-akoma-box">
+
+        <h1>Sorry! Users...</h1>
+
+        <h2>Akoma is Working on this Session. Please Wait until the Sessions don't be complete.</h2>
+
+        <p id="matter">
+            Akoma is providing Best Session for you. Join Courses ,Look up Akoma's social media platform.
+        </p>
+        <p>
+            Work With Akoma.Join The Session And Grow Your Abilities, Improove Your Skill ,
+            Join Competitions on Akoma And Cullect Ranking.
+            Akoma also provide video lectures on youtube...
+            In disciplines of Artificial Intelligence, Machine Learning, Deep Learning, Python and R programming
+            language, etc.
+            Akoma also provide real-time projects in the field of AI and Data
+            Science.</p>
+            <a href="https://www.youtube.com/watch?v=bb4z5OuWieY">Akoma Overview</a>
+        <div id="btn-yoy"> <a href="https://www.youtube.com/channel/UCTrE7W2WiNL4OdWyYSoY05Q">You Tube</a> 
+         
+    </div>
+    <div class="footer-social-ak">
+        <a href="https://twitter.com/Akoma60582060"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.youtube.com/channel/UCTrE7W2WiNL4OdWyYSoY05Q"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/in/akoma-lite-64421920a/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.kaggle.com/akomalite"><i class="fab fa-kaggle"></i></a>
+        <a href=""><i class="fab fa-github"></i></a>
+      </div>
+</div>
+<div class="coming-soon-akoma">These New Sessions Will be Added After Some Time...</div>
+<!-- about page -->
+
+{% endblock body %}
